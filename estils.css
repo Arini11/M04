@@ -1,11 +1,19 @@
 	body {
-		background: url(fons.png) no-repeat;
+		background: #282828; /*1A1A1D */
 		background-size: cover;
+		color: #F2CB05;
+	}
+	hr {
+		border: 2px solid #F2CB05;
+		width: 65%;
+	}
+	a {
+		text-decoration: none;
+		color: #F2CB05;
 	}
 	.cos {
 		width: 900px;
 		margin: auto; /* ?? */
-		background-color: #707070;
 		border-radius: 20px;
 	}
 	.menu {
@@ -18,7 +26,6 @@
 	}	
 	.menu a {
 		color: #F2CB05;
-		text-decoration: none;
 		padding: 20px;
 		font-weight: bold;
 	}
@@ -26,7 +33,8 @@
 		background-color: black;
 	}
 	.capçalera img {
-		padding: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 	.fila {
 		text-align: center;
@@ -40,6 +48,7 @@
 	}
 	.columnes p {
 		text-align: justify;
+		color: #EFEFEF;
 	}
 	.columnes h2 {
 		height: 54px;
@@ -50,7 +59,6 @@
 		overflow: hidden;
 	}
 	.footer a {
-		text-decoration: none;
 		color: #F2CB05;
 	}
 	.footer > a {
@@ -61,14 +69,35 @@
 	.footer .menu {
 		margin-top: 20px;
 	}
-	.autors-div {
-		position: relative;	
-		padding: 20px;
-	}
-	.autors h2 {
+	.autor{
 		display: inline-block;
+		display: flex;
+		align-items: center;
+		padding: 20px;
+		justify-content: space-between;
+		color: #88BDBC;
+	}
+	.amagat {
+		display: none;
 		position: absolute;
-		top: 45%;
-		margin: 0;
-		padding-left: 20px;
+	}
+	.autor:hover .amagat{
+		display: inline-block;
+	}
+	.espai {
+		height: 30px;
+	}
+	.autor a:hover{
+		color: #F2CB05;
+		font-weight: bold;
+	}
+	.dreta {
+		text-align: right;
+		right: 760px;
+	}
+	.esquerra {
+		left: 720px;
+	}
+	.dreta li {
+		direction: rtl;
 	}
