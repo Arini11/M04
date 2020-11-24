@@ -3,78 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Llibreria Digital</title>
-	<style> /* POSAR CSS EXTERN, eliminar comentaris, són només notes per dir al vídeo */
-	/* * { border: 1px solid red; } */
-
-	body {
-		background: url(fons.png) no-repeat;
-		background-size: cover;
-	}
-	.cos {
-		width: 900px;
-		margin: auto; /* ?? */
-		background-color: #707070;
-		border-radius: 20px;
-	}
-	.menu {
-		float: right;
-		margin-top: 48px;
-		margin-bottom: 20px;
-	}
-	.menu li { /* Posar elements llista en horitzontal */
-		display: inline;
-	}	
-	.menu a {
-		color: #F2CB05;
-		text-decoration: none;
-		padding: 20px;
-		font-weight: bold;
-	}
-	.menu a:hover{
-		background-color: black;
-	}
-	.capçalera img {
-		padding: 10px;
-	}
-	.fila {
-		text-align: center;
-	}
-	.columnes {
-		width: 270px;
-		display: inline-block;
-		text-align: center;
-		vertical-align: top;
-		padding: 10px;
-	}
-	.columnes p {
-		text-align: justify;
-	}
-	.columnes h2 {
-		height: 54px;
-		color: #F2CB05;
-		text-shadow: 1px 1px #0D0D0D;
-	}
-	.footer {
-		overflow: hidden;
-	}
-	.footer a {
-		text-decoration: none;
-		color: #F2CB05;
-	}
-	.footer > a {
-		float: left;
-		margin-left: 10px;
-		margin-top: 20px;
-	}
-	.footer .menu {
-		margin-top: 20px;
-	}
-	</style>
+	<link rel="stylesheet" href="estils.css">
 </head>
 <body>
 	<div class="cos">
 		<div class="capçalera">
-		<img src="titol.png" height="90" width="268" alt=""><!-- NO POSAR px DESPRÉS DEL VALOR DE HEIGHT I WIDTH A LES <IMG> -->
+		<img src="imatges/index/titol.png" height="90" width="268" alt=""><!-- NO POSAR px DESPRÉS DEL VALOR DE HEIGHT I WIDTH A LES <IMG> -->
 			<ul class="menu">
 				<li><a href="">Inici</a></li>
 				<li><a href="">Llibres</a></li>
@@ -82,11 +16,11 @@
 				<li><a href="">Contacte</a></li>
 			</ul>
 		</div>
-		<img src="imatge_portada.png" height="300" width="900" alt="">
+		<img src="imatges/index/imatge_portada.png" height="300" width="900" alt="">
 		<div class="fila">
 			<div class="columnes">
 				<h2>Monarchy, Democracy and Natural Order</h2>
-				<img src="llibre1.jpg" height="360" width="270" alt="">
+				<img src="imatges/index/llibre1.jpg" height="360" width="270" alt="">
 				<p>Monarquia, Democràcia i Ordre Natural és el títol del llibre més conegut de
 				l'economista i filòsof alemany Hans Herman Hoppe. Hoppe analitza i compara les dues formes
 				de govern que s'esmenten al títol, però ho fa des de la perspectiva de la preferència
@@ -98,7 +32,7 @@
 			</div>
 			<div class="columnes">
 				<h2>Human Action</h2>
-				<img src="llibre2.jpeg" height="360" width="270" alt="">
+				<img src="imatges/index/llibre2.jpeg" height="360" width="270" alt="">
 				<p>L'Acció Humana és una de les obres més importants de Mises. Aquest tractat d'economia,
 				entre altres obres de la mateixa categoria, estableix les bases del pensament de l'Escola
 				Austríaca d'Economia. Es posa l'accent en idees tals com la d'individualisme metodològic,
@@ -109,7 +43,7 @@
 			</div>
 			<div class="columnes">
 				<h2>Anarchy, State, and Utopia</h2>
-				<img src="llibre3.jpeg" height="360" width="270" alt="">
+				<img src="imatges/index/llibre3.jpeg" height="360" width="270" alt="">
 				<p>Anarquia, Estat, i Utopia, és una de les obres més conegudes dins del moviment
 				lliberal-llibertari. Robert Nozick, el seu autor, discuteix sobre la moral de l'Estat,
 				i teoritza sobre com, d'alguna manera, es pot fer compatible la preservació de drets

@@ -1,0 +1,103 @@
+	body {
+		background: #282828; /*1A1A1D */
+		background-size: cover;
+		color: #F2CB05;
+	}
+	hr {
+		border: 2px solid #F2CB05;
+		width: 65%;
+	}
+	a {
+		text-decoration: none;
+		color: #F2CB05;
+	}
+	.cos {
+		width: 900px;
+		margin: auto; /* ?? */
+		border-radius: 20px;
+	}
+	.menu {
+		float: right;
+		margin-top: 48px;
+		margin-bottom: 20px;
+	}
+	.menu li { /* Posar elements llista en horitzontal */
+		display: inline;
+	}	
+	.menu a {
+		color: #F2CB05;
+		padding: 20px;
+		font-weight: bold;
+	}
+	.menu a:hover{
+		background-color: black;
+	}
+	.capçalera img {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.fila {
+		text-align: center;
+	}
+	.columnes {
+		width: 270px;
+		display: inline-block;
+		text-align: center;
+		vertical-align: top;
+		padding: 10px;
+	}
+	.columnes p {
+		text-align: justify;
+		color: #EFEFEF;
+	}
+	.columnes h2 {
+		height: 54px;
+		color: #F2CB05;
+		text-shadow: 1px 1px #0D0D0D;
+	}
+	.footer {
+		overflow: hidden;
+	}
+	.footer a {
+		color: #F2CB05;
+	}
+	.footer > a {
+		float: left;
+		margin-left: 10px;
+		margin-top: 20px;
+	}
+	.footer .menu {
+		margin-top: 20px;
+	}
+	.autor{
+		display: inline-block;
+		display: flex;
+		align-items: center;
+		padding: 20px;
+		justify-content: space-between;
+		color: #88BDBC;
+	}
+	.amagat {
+		display: none;
+		position: absolute;
+	}
+	.autor:hover .amagat{
+		display: inline-block;
+	}
+	.espai {
+		height: 30px;
+	}
+	.autor a:hover{
+		color: #F2CB05;
+		font-weight: bold;
+	}
+	.dreta {
+		text-align: right;
+		right: 760px;
+	}
+	.esquerra {
+		left: 720px;
+	}
+	.dreta li {
+		direction: rtl;
+	}

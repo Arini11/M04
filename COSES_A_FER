@@ -1,0 +1,10 @@
+- Organitzar les imatges en una carpeta, i revisar els enllaços a l'html
+- Posar CSS extern, i revisar que tots els estils s'apliquin bé, i totes les rutes siguin correctes
+- Posar enllaços als títols
+- Provar com queda amb el fons gris, incloent el que no és el div del mig, sense el la imatge de fons actual
+- optimitzar el css abans d'entregar
+- intentar solucionar error visual del hover, que es mouen algunes imatges i els enllaços.
+- girar ul al reves, que el punt estigui de la cara de la imatge
+- canviar la posició left de .amagat, a 750, quan el div sigui molt alple (determinal píxels exactes), i la resta del temps deixar-ho a 800
+- bora de les imatges difuminada
+- esquema de colors
