@@ -144,14 +144,68 @@
 
 /* ###Contacte### */
 
-.titol-form, .titol-autors {
+.titol-form, .titol-autors, .titol-videos {
 	padding: 20px 0px;
 	display: block;
 	text-align: center;
 }
-.titol-form h1, .titol-autors h1 {
+.titol-form h1, .titol-autors h1, .titol-videos h1{
 	font-family: sarabande;
 }
-.titol-form hr, .titol-autors hr {
+.titol-form hr, .titol-autors hr, .titol-videos hr {
 	border: 2px solid #88BDBC;
+}
+.formulari p {
+	text-align: center;
+	padding-bottom: 20px;
+}
+.fila-form {
+	width: 650px;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+.fila-form * {
+	color: #6d7485;
+	background-color: #282828;
+	border: 10px solid #282828;	
+	border-radius: 3px;
+}
+.fila-form *:focus {
+	outline: 2px solid #88BDBC;
+}
+.fila-form input {
+	width: 325px;
+	margin:5px;
+}
+.fila-form textarea{
+	width: 100%;
+	height: 100px;
+	margin: 5px;
+}
+.enviar input {
+	background-color: inherit;
+	border: 0;
+	color: black;
+}
+.enviar {
+	width: 80px;
+	padding: 13px 25px;
+	border-radius: 10px;
+	background-color: #F2CB05;
+	margin-top: 10px;
+}
+.enviar:hover {
+	background-color: #fad61e;
+}
+.footer .espai {
+	height: 300px;
+}
+.videos {
+	margin: 20px 0px;
+	text-align: center;
+}
+.videos iframe {
+	width: 900px;
+	height: 500px;
 }
