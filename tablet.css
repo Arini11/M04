@@ -1,0 +1,52 @@
+/* * {border: 1px solid red} */
+body {
+	margin: 0px;
+}
+.cos {
+	max-width: 100%;
+}
+img.portada {
+	width: 100%;
+}
+ul.menu {
+	display: none;
+}
+#menu-mobil {
+	display: none;
+	background-color: grey;
+	position: fixed;
+	width: 100%;
+	height: 40%;
+	left: 0px;
+}
+.logo-menu {
+	background-image:url("imatges/index/menu.png");	
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 20%;
+	right: 10%;
+}
+.capçalera {
+	position: relative;
+	padding: 5px;
+	width: auto;
+}
+#menu-mobil {
+	text-align: center;
+	position: absolute;
+}
+#menu-mobil a {
+	display: block;
+	width: 100%;
+	padding: 7px;
+}
+#menu-mobil a:hover {
+	background-color: black;
+}
+.columnes {
+	width: auto;
+}

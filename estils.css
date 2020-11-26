@@ -1,6 +1,5 @@
 	body {
 		background: #282828; /*1A1A1D */
-		background-size: cover;
 		color: #F2CB05;
 	}
 	@font-face {
@@ -21,9 +20,8 @@
 		border-radius: 20px;
 	}
 /* Capçalera - logo */
-	.capçalera img {
-		padding-top: 10px;
-		padding-bottom: 10px;
+	.portada {
+		width: 100%;
 	}
 /* Capçalera - menú */
 	.menu {
@@ -48,7 +46,7 @@
 	}
 /* Columnes */
 	.columnes {
-		width: 270px;
+		width: 30%;
 		display: inline-block;
 		text-align: center;
 		vertical-align: top;
@@ -208,4 +206,9 @@
 .videos iframe {
 	width: 900px;
 	height: 500px;
+}
+
+
+.icona, #menu-mobil {
+	display: none;
 }
