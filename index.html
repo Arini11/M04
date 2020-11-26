@@ -2,21 +2,59 @@
 <html lang="ca">
 <head>
 	<meta charset="UTF-8">
-	<title>Llibreria Digital</title>
-	<link rel="stylesheet" href="estils.css">
+	<title>Biblioteca Digital</title>
+	<link rel="stylesheet" type="text/css" href="estils.css"/>
+	<link rel="stylesheet" type="text/css" media="only screen and (max-width: 768px)" href="tablet.css"/>
+	<link rel="stylesheet" type="text/css" media="only screen and (max-width: 425px)" href="mobil.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+function menuMobilGran() {
+  var midaMobilPetit = window.matchMedia("(max-width: 425px)")
+  var menu = document.getElementById("menu-mobil");
+  var cap = document.getElementById("cap");
+  if (menu.style.display === "block") {
+    cap.style.backgroundColor = "#282828";
+    cap.style.position = "relative";
+    cap.style.width= "auto";
+    menu.style.display = "none";
+    menu.style.top = "0px";
+    menu.style.position = "static";
+  } else {
+    cap.style.backgroundColor = "grey";
+    cap.style.position = "fixed";
+    cap.style.width= "100%";
+    menu.style.display = "block";
+    menu.style.position = "fixed";
+    if(midaMobilPetit.matches){
+	menu.style.top = "90px";
+    } else {
+    	menu.style.top = "125px";
+    }
+  }
+}
+</script>
 </head>
 <body>
 	<div class="cos">
-		<div class="capçalera">
-		<img src="imatges/index/titol.png" height="90" width="268" alt=""><!-- NO POSAR px DESPRÉS DEL VALOR DE HEIGHT I WIDTH A LES <IMG> -->
+		<div class="capçalera" id="cap">
+		<a href="index.html">
+			<img class="logo" src="imatges/index/titol.png" height="90" width="268" alt=""><!-- NO POSAR px DESPRÉS DEL VALOR DE HEIGHT I WIDTH A LES <IMG> -->
+		</a>
 			<ul class="menu">
-				<li><a href="">Inici</a></li>
-				<li><a href="">Llibres</a></li>
-				<li><a href="">Autors</a></li>
-				<li><a href="">Contacte</a></li>
+				<li><a href="index.html">Inici</a></li>
+				<li><a href="videos.html">Vídeos</a></li>
+				<li><a href="autors.html">Autors / Llibres</a></li>
+				<li><a href="contacte.html">Contacte</a></li>
 			</ul>
+			<div onclick="menuMobilGran()" class="logo-menu"></div>
 		</div>
-		<img src="imatges/index/imatge_portada.png" height="300" width="900" alt="">
+		<div id="menu-mobil">
+			<a href="index.html">Inici</a>
+   			<a href="videos.html">Vídeos</a>
+   			<a href="autors.html">Autors / Llibres</a>
+   			<a href="contacte.html">Contacte</a>
+		</div>
+		<img class="portada" src="imatges/index/imatge_portada.png" alt="">
 		<div class="fila">
 			<div class="columnes">
 				<h2>Monarchy, Democracy and Natural Order</h2>
@@ -55,12 +93,11 @@
 			</div>
 		</div>
 		<div class="footer">
-			<a href="https://arini11.github.io/web-M4/">arini11.github.io/web-M4</a>
 			<ul class="menu">
-				<li><a href="">Inici</a></li>
-				<li><a href="">Llibres</a></li>
-				<li><a href="">Autors</a></li>
-				<li><a href="">Contacte</a></li>
+				<li><a href="index.html">Inici</a></li>
+				<li><a href="videos.html">Vídeos</a></li>
+				<li><a href="autors.html">Autors / Llibres</a></li>
+				<li><a href="contacte.html">Contacte</a></li>
 			</ul>
 		</div>
 	</div>

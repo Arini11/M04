@@ -1,8 +1,11 @@
 	body {
 		background: #282828; /*1A1A1D */
-		background-size: cover;
 		color: #F2CB05;
 	}
+	@font-face {
+ 		font-family: sarabande;
+  		src: url(fonts/sarabande.tff);
+}
 	hr {
 		border: 2px solid #F2CB05;
 		width: 65%;
@@ -16,6 +19,11 @@
 		margin: auto; /* ?? */
 		border-radius: 20px;
 	}
+/* Capçalera - logo */
+	.portada {
+		width: 100%;
+	}
+/* Capçalera - menú */
 	.menu {
 		float: right;
 		margin-top: 48px;
@@ -32,15 +40,13 @@
 	.menu a:hover{
 		background-color: black;
 	}
-	.capçalera img {
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
+/* Div contenidor de columnes */
 	.fila {
 		text-align: center;
 	}
+/* Columnes */
 	.columnes {
-		width: 270px;
+		width: 30%;
 		display: inline-block;
 		text-align: center;
 		vertical-align: top;
@@ -55,6 +61,7 @@
 		color: #F2CB05;
 		text-shadow: 1px 1px #0D0D0D;
 	}
+/* Footer */
 	.footer {
 		overflow: hidden;
 	}
@@ -69,35 +76,139 @@
 	.footer .menu {
 		margin-top: 20px;
 	}
-	.autor{
-		display: inline-block;
-		display: flex;
-		align-items: center;
-		padding: 20px;
-		justify-content: space-between;
-		color: #88BDBC;
-	}
-	.amagat {
-		display: none;
-		position: absolute;
-	}
-	.autor:hover .amagat{
-		display: inline-block;
-	}
+/* Div buit per fer espai */
 	.espai {
 		height: 30px;
 	}
+	
+/* ###ESTILS PÀGINA AUTORS### */
+
+/* Estil de cada div.autor */
+	.autor{
+		padding: 20px;
+		color: #88BDBC;
+		position: relative;
+		height: 280px;
+	}
+/* Divs que contenen h2, img i ul */
+	.autor div {
+		position: absolute;
+		display: inline-block;
+	}
+/* Efecte visual per mostrar llista quan es passa per damunt del div i per
+   remarcar l'element de llista pel qual s'hi està passant el cursor */
+	.amagat {
+		visibility: hidden;
+	}
+	.autor:hover .amagat{
+		visibility: visible;
+	}
 	.autor a:hover{
-		color: #F2CB05;
+		color: #88BDBC;
 		font-weight: bold;
 	}
-	.dreta {
-		text-align: right;
-		right: 760px;
+/* Autors alineats a l'esquerra */
+	.esquerra .div2{
+		top: 40%;
+		left: 25%;
 	}
-	.esquerra {
-		left: 720px;
+	.esquerra .div3{
+		top: 40%;
+		right: 10%;
+	}
+/* Autors alineats a la dreta */
+	.dreta .div3{
+		right: 10%;
+	}
+	.dreta .div2{
+		top: 40%;
+		right: 35%;
+		padding-right: 20px;
+		padding-left: 0px;
+	}
+	.dreta .div1 {
+		top: 40%;	
+	}
+/* Llistes alineades a la dreta */
+	.dreta ul {
+		text-align: right;
 	}
 	.dreta li {
 		direction: rtl;
 	}
+	.div1.gran {
+		top: 35%;
+	}
+
+/* ###Contacte### */
+
+.titol-form, .titol-autors, .titol-videos {
+	padding: 20px 0px;
+	display: block;
+	text-align: center;
+}
+.titol-form h1, .titol-autors h1, .titol-videos h1{
+	font-family: sarabande;
+}
+.titol-form hr, .titol-autors hr, .titol-videos hr {
+	border: 2px solid #88BDBC;
+}
+.formulari p {
+	text-align: center;
+	padding-bottom: 20px;
+}
+.fila-form {
+	width: 650px;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+.fila-form * {
+	color: #6d7485;
+	background-color: #282828;
+	border: 10px solid #282828;	
+	border-radius: 3px;
+}
+.fila-form *:focus {
+	outline: 2px solid #88BDBC;
+}
+.fila-form input {
+	width: 325px;
+	margin:5px;
+}
+.fila-form textarea{
+	width: 100%;
+	height: 100px;
+	margin: 5px;
+}
+.enviar input {
+	background-color: inherit;
+	border: 0;
+	color: black;
+}
+.enviar {
+	width: 80px;
+	padding: 13px 25px;
+	border-radius: 10px;
+	background-color: #F2CB05;
+	margin-top: 10px;
+}
+.enviar:hover {
+	background-color: #fad61e;
+}
+.footer .espai {
+	height: 300px;
+}
+.videos {
+	margin: 20px 0px;
+	text-align: center;
+}
+.videos iframe {
+	width: 900px;
+	height: 500px;
+}
+
+
+.icona, #menu-mobil {
+	display: none;
+}

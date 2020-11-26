@@ -8,3 +8,12 @@
 - canviar la posició left de .amagat, a 750, quan el div sigui molt alple (determinal píxels exactes), i la resta del temps deixar-ho a 800
 - bora de les imatges difuminada
 - esquema de colors
+- canviar titol de les pàgines "llibreria" a "biblioteca"
+- arrodonir bores del formulari de contacte
+- omplir alts de les imatges
+- eliminar links del footer
+- canviar distancia entre h2 a la versio mobil
+- posar js en arxiu extern
+- fer una tercera mida per mobils petits, canviar només el logo
+- posar una mica més de padding al logo
+- canviar logo menu
