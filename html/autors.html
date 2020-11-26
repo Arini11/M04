@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-	<meta charset="UTF-8">
-	<title>Llibreria Digital</title>
-	<link rel="stylesheet" href="estils.css">
+	<meta charset="UTF-8"/>
+	<title>Biblioteca Digital</title>
+	<meta name="description" content="Biblioteca Digital. Llibres i contingut audiovisual de teoria política, filosofia, economia, etc"/>
+	<meta name="keywords" content="llibres, biblioteca, economia, filosofia, psicologia, teoria política, Mises, Hayek, Hoppe, liberalisme, Acción Humana, Camino de Servidumbre, La Fatal Arrogancia" />
+	<meta name="author" content="Arnau Mas"/>
+	<link rel="stylesheet" type="text/css" href="../css/estils.css"/>
+	<link rel="stylesheet" type="text/css" media="only screen and (max-width: 768px)" href="../css/tablet.css"/>
+	<link rel="stylesheet" type="text/css" media="only screen and (max-width: 425px)" href="../css/mobil.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="../js/menu.js"></script>
 </head>
 <body>
 	<div class="cos">
-		<div class="capçalera">
+		<div class="capçalera" id="cap">
 			<a href="index.html">
-				<img src="imatges/index/titol.png" height="90" width="268" alt=""><!-- NO POSAR px DESPRÉS DEL VALOR DE HEIGHT I WIDTH A LES <IMG> -->
+				<img class="logo" src="../imatges/index/titol.png" height="90" width="268" alt=""><!-- NO POSAR px DESPRÉS DEL VALOR DE HEIGHT I WIDTH A LES <IMG> -->
 			</a>
 			<ul class="menu">
 				<li><a href="index.html">Inici</a></li>
@@ -17,6 +24,13 @@
 				<li><a href="autors.html">Autors / Llibres</a></li>
 				<li><a href="contacte.html">Contacte</a></li>
 			</ul>
+			<div onclick="menuMobilGran()" class="logo-menu"></div>
+		</div>
+		<div id="menu-mobil">
+			<a href="index.html">Inici</a>
+   			<a href="videos.html">Vídeos</a>
+   			<a href="autors.html">Autors / Llibres</a>
+   			<a href="contacte.html">Contacte</a>
 		</div>
 		<div class="espai"></div>
 		<div class="titol-autors">
@@ -25,10 +39,10 @@
 		</div>
 		<div class="div-autors">
 			<div class="autor esquerra">
-				<div class="div1"><img src="imatges/autors/mises.jpg" height="270" width="200" alt=""></div>
+				<div class="div1"><img src="../imatges/autors/mises.jpg" height="270" width="200" alt=""></div>
 				<div class="div2">
 					<ul class="amagat">
-					<li><a href="https://cdn.mises.org/Human%20Action_3.pdf">Human Action: A Treatise on Economics. 1949<a></li>
+					<li><a href="https://cdn.mises.org/Human%20Action_3.pdf">Human Action: A Treatise on Economics. 1949</a></li>
 					<li><a href="">Planning for Freedom. 1952</a></li>
 					<li><a href="">The Anti-Capitalistic Mentality. 1956</a></li>
 					</ul>
@@ -45,11 +59,11 @@
 					<li><a href="">Law, Legislation and Liberty. 1973</a></li>
 				</ul>
 				</div>
-				<div class="div3"><img src="imatges/autors/hayek.jpg" height="270" width="200" alt=""></div>
+				<div class="div3"><img src="../imatges/autors/hayek.jpg" height="270" width="200" alt=""></div>
 			</div>
 			<hr>
 			<div class="autor esquerra">
-				<div class="div1"><img src="imatges/autors/nozick.jpeg" height="270" width="200" alt=""></div>
+				<div class="div1"><img src="../imatges/autors/nozick.jpeg" height="270" width="200" alt=""></div>
 				<div class="div2">
 				<ul class="amagat">
 					<li><a href="">Anarchy, State and Utopia. 1974</a></li>
@@ -61,7 +75,7 @@
 			</div>
 			<hr>
 			<div class="autor dreta">
-				<div class="div3"><img src="imatges/autors/hoppe.jpg" height="270" width="200" alt=""></div>
+				<div class="div3"><img src="../imatges/autors/hoppe.jpg" height="270" width="200" alt=""></div>
 				<div class="div2">
 				<ul class="amagat">
 					<li><a href=""> The Economics and Ethics of Private Property. 2006</a></li>
@@ -73,7 +87,7 @@
 			</div>
 			<hr>
 			<div class="autor esquerra">
-				<div class="div1"><img src="imatges/autors/rothbard.jpg" height="270" width="200" alt=""></div>
+				<div class="div1"><img src="../imatges/autors/rothbard.jpg" height="270" width="200" alt=""></div>
 				<div class="div2">
 				<ul class="amagat">
 					<li><a href="">Man, Economy, and State. 1962</a></li>
@@ -85,7 +99,7 @@
 			</div>
 			<hr>
 			<div class="autor dreta">
-				<div class="div3"><img src="imatges/autors/jouvenel.jpg" height="270" width="200" alt=""></div>
+				<div class="div3"><img src="../imatges/autors/jouvenel.jpg" height="270" width="200" alt=""></div>
 				<div class="div2">
 				<ul class="amagat">
 					<li><a href="">The Ethics of Redistribution. 1951</a></li>
@@ -97,7 +111,7 @@
 			</div>
 			<hr>
 			<div class="autor esquerra">
-				<div class="div1"><img src="imatges/autors/molinari.jpg" height="270" width="200" alt=""></div>
+				<div class="div1"><img src="../imatges/autors/molinari.jpg" height="270" width="200" alt=""></div>
 				<div class="div2">
 				<ul class="amagat">
 					<li><a href="">De la production de la sécurité. 1849</a></li>
@@ -110,7 +124,6 @@
 			<hr>
 		</div>
 		<div class="footer">
-			<a href="https://arini11.github.io/web-M4/">arini11.github.io/web-M4</a>
 			<ul class="menu">
 				<li><a href="index.html">Inici</a></li>
 				<li><a href="videos.html">Vídeos</a></li>
